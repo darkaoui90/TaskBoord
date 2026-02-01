@@ -1,4 +1,54 @@
-📝 TaskBoard - Task Management SystemTaskBoard is a high-performance, secure planning system designed to streamline workflow management. This project was developed as part of a mission for TaskBoard Inc. to provide users with an intuitive interface to track, prioritize, and manage their daily professional activities.🚀 Key Features🔐 Security & AccessSecure Authentication: Complete registration/login system with session management.Data Protection: Password hashing using bcrypt, protection against CSRF, and SQL Injection via prepared statements.Form Validation: Strict server-side and client-side validation.📋 Task Management (CRUD)Full Lifecycle: Create, Read, Update, and Delete tasks with ease.Soft Delete: Tasks are archived rather than permanently erased, ensuring data integrity.Dynamic Inputs: Ability to add multiple tasks simultaneously using Vanilla JavaScript/Alpine.js.Task Metadata: Manage deadlines, priorities (Low/Medium/High), and statuses (Todo/In Progress/Done).📊 Intelligence & SearchSmart Dashboard: Real-time statistics including total tasks, overdue items, and completion percentages.Advanced Filtering: Sort by deadline or filter by priority and status.Live Search: Find tasks instantly via title or description keywords.🛠 Tech StackBackend: PHP (MVC Architecture)Frontend: HTML5, CSS3 (Tailwind/Bootstrap), JavaScript (Vanilla/Alpine.js)Database: MySQLSecurity: Bcrypt, CSRF TokensPlanning: Jira🏗 Architecture & DesignThe project follows the MVC (Model-View-Controller) pattern to ensure a clean separation of concerns and maintainability.Model: Handles database interactions and business logic (e.g., Task and User entities).View: Renders the UI and provides feedback to the user.Controller: Orchestrates the flow between the user's requests and the data.Database Schema (Overview)Users Table: id, email, password, role, created_atTasks Table: id, user_id, title, description, deadline, priority, status, deleted_at💻 InstallationClone the repositoryBashgit clone https://github.com/your-username/taskboard.git
-cd taskboard
-Database SetupCreate a MySQL database named taskboard_db.Import the provided database.sql file.Configure your .env or config file with your local credentials.Run the ProjectUsing a local server (XAMPP/WAMP) or PHP's built-in server:Bashphp -S localhost:8000
-📋 User Stories (US)IDRoleRequirementStatusUS-1.1New UserRegister a new account with email/password✅US-2.2UserCreate tasks with deadlines and priorities✅US-3.1UserSearch tasks by keywords✅US-4.1UserView a dashboard with completion stats✅🗓 Project TimelineStart Date: January 26, 2026Deadline: January 30, 2026Duration: 5 Days🤝 Contact Mohammed Darkaoui - Full Stack Developer
+# 📝 TaskBoard - Task Management System
+
+![Status](https://img.shields.io/badge/Status-Project%20Active-brightgreen)
+![Version](https://img.shields.io/badge/Version-1.0.0-blue)
+![License](https://img.shields.io/badge/License-MIT-gray)
+
+**TaskBoard** is a professional planning system designed to streamline workflow management. This project was developed as a mission for TaskBoard Inc. to provide an intuitive interface for tracking, prioritizing, and managing daily activities.
+
+---
+
+## 🚀 Key Features
+
+### 🔐 Security & Access
+* **Secure Authentication:** Complete registration/login system.
+* **Data Protection:** Password hashing using **bcrypt**, protection against **CSRF**, and **SQL Injection**.
+* **Form Validation:** Strict server-side and client-side validation.
+
+### 📋 Task Management (CRUD)
+* **Full Lifecycle:** Create, Read, Update, and Delete tasks.
+* **Soft Delete:** Tasks are archived rather than permanently erased.
+* **Dynamic Inputs:** Add up to 5 tasks at once using Vanilla JavaScript.
+* **Metadata:** Manage deadlines, priorities (Low/Medium/High), and statuses.
+
+### 📊 Intelligence & Search
+* **Smart Dashboard:** Real-time stats (Total, Overdue, Completion %).
+* **Advanced Filtering:** Filter by priority, status, and sort by deadline.
+* **Live Search:** Instant search by title or description keywords.
+
+---
+
+## 🛠 Tech Stack
+
+* **Backend:** PHP Laravel (MVC Architecture)
+* **Frontend:** HTML5, CSS3, JavaScript (Vanilla / Alpine.js)
+* **Database:** MySQL
+* **Planning:** Jira / Kanban
+
+---
+
+## 🏗 Architecture
+
+The project follows the **MVC (Model-View-Controller)** pattern:
+
+1.  **Model:** Manages database logic and relations.
+2.  **View:** Renders the UI and provides user feedback.
+3.  **Controller:** Handles the logic between the User and the Data.
+
+---
+
+## 💻 Installation & Setup
+
+1. **Clone the repository**
+   ```bash
+   git clone [https://github.com/your-username/taskboard.git](https://github.com/your-username/taskboard.git)
